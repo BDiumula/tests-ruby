@@ -20,12 +20,18 @@ def repeat (simon, number_of_repeat = 2)
 	return hello.strip
 end
 
-def start_of_word
+number_of_letter = gets.chomp
+array_start = [ ]
 
+def start_of_word (simon, number_of_letter, array_start)
+array_start << simon.to_s
+number_of_letter = number_of_letter.to_s
+return array_start [number_of_letter]
 end
 
-def first_word
-
+def first_word (simon)
+	simon = simon.split(" ")
+	return simon [0]
 end
 
 def first_word
